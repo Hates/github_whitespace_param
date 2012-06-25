@@ -1,0 +1,15 @@
+{
+  "name": "Github Whitespace",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Because I want whitespace ignoring by default on Github.",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/files"],
+      "js": ["github.js"]
+    }
+  ],
+  "permissions": [
+    "https://github.com/"
+  ]
+}
